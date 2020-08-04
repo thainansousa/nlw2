@@ -28,8 +28,6 @@
 }
 html, body{
     height: 100%;
-    background-color: var(--color-primary-dark);
-    color: var(--color-box-base);
     display: flex;
     align-items: center;
     justify-content: center;
