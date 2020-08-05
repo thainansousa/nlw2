@@ -1,0 +1,175 @@
+html, body{
+    background-color: var(--color-background);
+    display: block;
+}
+#container-study{
+    width: 100%;
+    background-color: var(--color-primary);
+    padding: 2.6rem;
+}
+
+#container-study .logo-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.6rem;
+    margin-bottom: 4rem;
+}
+#container-study .logo-container img{
+    height: 3rem;
+}
+#container-study strong{
+    color: var(--color-title-in-primary);
+    font-size: 5.2rem;
+}
+#container-study form{
+    margin-top: 3rem;
+}
+#container-study .select-block label, 
+#container-study .input-block label{
+    color: var(--color-text-in-primary);
+    font-size: 2rem;
+    margin: 1.4rem 0;
+    font-weight: 700;
+    font-family: Archivo;
+}
+#container-study .select-block,
+#container-study .input-block{
+    display: flex;
+    flex-direction: column;
+}
+
+#container-study select,
+#container-study input
+{
+  height: 5.6rem;
+  border: none;
+  border-radius: 0.8rem;
+  outline-color: var(--color-primary);
+  background-color: var(--color-input-background)
+}
+#container-study form button {
+    width: 100%;
+    height: 5.6rem;
+    border: none;
+    border-radius: 0.8rem;
+    margin-top: 3.6rem;
+    background-color: var(--color-secondary);
+    color: var(--color-button-text);
+    cursor: pointer;
+    transition: opacity 400ms;
+    font-weight: 700;
+    font-family: Archivo;
+}
+#container-study form button:hover {
+    opacity: 0.8;
+}
+main{
+    width: 96vw;
+}
+article{
+    width: 90%;
+    margin: 3rem auto;
+    border-radius: 0.8rem;
+    border: 1px solid var(--color-line-in-white);
+    background-color: var(--color-box-base);
+    color: var(--color-text-base);
+}
+.teacher-item header{
+    display: flex;
+    padding: 2rem;
+}
+.teacher-item header img{
+    height: 8rem;
+    width: 8rem;
+    border-radius: 50%;
+}
+.teacher-item header div{
+    margin-left: 1.6rem;
+}
+.teacher-item header div strong{
+    display: block;
+    font-size: 2.8rem;
+    color: var(--color-primary-darker);
+}
+.teacher-item > p{
+    margin-top: 2.6rem;
+    line-height: 3.2rem;
+    font-size: 2.1rem;
+    padding: 2rem;
+}
+.teacher-item footer{
+    border-top: 1px solid var(--color-small-info);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em;
+}
+.teacher-item footer p strong{
+    font-size: 2.6rem;
+    margin-left: 1.6rem;
+    color: var( --color-primary-dark)
+}
+.teacher-item footer button{
+    background-color: var(--color-secondary);
+    border: none;
+    width: 26rem;
+    height: 5.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: var(--color-button-text);
+    border-radius: 0.8rem;
+    cursor: pointer;
+    transition: background 400ms;
+}
+.teacher-item footer button:hover{
+    background-color: var(--color-secondary-dark);
+}
+
+@media screen and (min-width: 700px){
+    #container-study .container-header{
+        width: 70%;
+        margin: 0 auto;
+    }
+    #container-study strong{
+        display: block;
+        max-width: 350px;
+    }
+    #container-study form{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px;
+    }
+    #container-study form button{
+        margin-top: 4.8rem;
+    }
+    main{
+        width: 100%;
+    }
+    article{
+        max-width: 65%;
+        margin: 30px auto;
+    }
+    .teacher-item header img{
+        height: 10rem;
+        width: 10rem;
+        border-radius: 50%;
+    }
+    .teacher-item header div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .teacher-item header div strong{
+        font-size: 3.6rem;
+    }
+    .teacher-item header div span{
+        font-size: 2.4rem;
+    }
+    .teacher-item > p{
+        font-size: 2.6rem;
+    }
+    .teacher-item footer{
+        font-size: 2.2rem;
+    }
+}
